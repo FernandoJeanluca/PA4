@@ -1,0 +1,673 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+main{
+    width:100%;
+    height: 100vh;
+    background-image:url(img/fondodeimagen.jpg);background-repeat: no-repeat; background-size:cover;
+    background-position:center;
+}
+#contenedor{
+    width:80%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:rgb(9, 11, 110);
+    font-family:'Playfair Display', serif;
+    font-style:italic;
+}
+h1,h2{
+    text-align: center;
+    align-content: center;
+    margin:15px
+}
+#contenedor h1{height: 50px;}
+#contenedor h2{height: 100px;}
+
+
+.web li a{
+    text-decoration: none;
+    padding:10px;
+    color:rgb(94, 46, 46)
+}
+.redes li a{
+    padding:5px;
+    font-size: 1.5em;
+    color:rgb(128, 45, 45);
+}
+/* blog*/
+#container{
+    width:80%;
+    margin:auto;
+}
+#principal{
+    height: 1000px;
+}
+
+header .web li a{
+    color:rgb(39, 83, 177);
+}
+
+#foto img{
+    width:90%;
+    display:block;
+    margin:auto;
+    border-radius:20px;
+}
+figure{
+    text-align: center;
+    width:50px;
+    float:right;
+    
+}
+figure img{
+    width:100%;
+    border-radius: 50%;
+}
+
+/*blog parrafo*/
+.blog{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.blog img{
+    width:250px;
+    border-radius:10px;
+}
+
+.texto{
+    width:600px;
+}
+
+header{
+    width:100%;
+    background:#7f8ae9;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    z-index:1000;
+
+    padding:30px 0;
+
+    box-shadow:0px 4px 10px rgba(5, 5, 5, 0.5);
+}
+
+/* MENU */
+.menu{
+    width:80%;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+/* TITULO */
+.menu h1{
+    font-family:'Playfair Display', serif;
+    font-size:70px;
+    font-style:italic;
+}
+
+/* SUBTITULOS */
+.menu ul{
+    list-style:none;
+
+    display:flex;
+
+    gap:40px;
+}
+
+.menu ul li a:hover{
+    background:#9aa5e4;
+    color:rgb(0, 0, 0);
+}
+
+section{
+    width:90%;
+
+    margin:auto;
+
+    padding-top:250px;
+}
+
+/* Galeria */
+.galeria{
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    flex-wrap:wrap;
+
+    justify-content:space-between;
+
+    row-gap:50px;
+
+    padding-top:250px;
+}
+
+.card{
+    width:30%;
+
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    transition:0.5s;
+
+    /* Filtro */
+    filter:brightness(80%) grayscale(20%);
+
+    box-shadow:0px 4px 15px rgba(0,0,0,0.5);
+}
+
+/* efecto hover */
+.card img:hover{
+
+    /* transformer */
+    transform:scale(1.08) rotate(2deg);
+
+    /* filtro */
+    filter:brightness(100%) grayscale(0%);
+
+    box-shadow:0px 0px 25px rgba(37,99,235,0.8);
+}
+
+.card p{
+    margin-top:15px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#1d4ed8;
+
+    transition:0.3s;
+}
+
+.card:hover p{
+    color:#000;
+}
+
+.web li a{
+    text-decoration:none;
+    color:#533892;
+    font-size:16px;
+    font-weight:bold;
+    padding:8px 10px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+
+.web li a:hover{
+    background:#93c5fd;
+    color:white;
+}
+
+.redes li a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:70px;
+    height:70px;
+    background:#000000;
+    color:white;
+    font-size:40px;
+    border-radius:50%;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.7);
+    transition:0.3s;
+    text-decoration:none;
+}
+
+.redes li a:hover{
+    transform:scale(1.2);
+
+    background:#1742a7;
+
+    color:white;
+
+    box-shadow:0px 0px 25px #2563eb;
+}
+
+#youtube{
+    width:30%;
+    text-align:center;
+}
+
+#youtube img{
+    width:100%;
+    height:160px;
+
+    object-fit:cover;
+
+    border-radius:5px;
+}
+
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+h1{
+    font-size: 50px;
+}
+iframe{
+    display:block;
+
+    margin:30px auto;
+
+    box-shadow:0px 4px 15px rgba(0,0,0,0.5);
+}
+/*para ubicarme en que pagina estoy*/
+.activo{
+    background:#2563eb;
+    color:white !important;
+    border-radius:10px;
+    box-shadow:0px 0px 15px rgba(37,99,235,0.8);
+}
+
+
+/* CONTACTO PAGINA */
+.contacto{
+    background:#e9dccd;
+    padding-top:250px
+}
+
+.contenedor-contacto{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.contacto h2{
+    color:#0e917f;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:20px;
+}
+
+table th,
+table td{
+    border:1px solid #fff;
+    padding:12px;
+    text-align:left;
+}
+
+table th{
+    width:120px;
+    background-color:#a4cebe;
+}
+
+.horario{
+    border:1px solid #fff;
+    padding:12px;
+    margin-bottom:15px;
+    background-color: #a4cebe;
+}
+
+.foto{
+    width:180px;
+    display:block;
+    margin:auto;
+}
+
+.formulario form{
+    display:flex;
+    flex-direction:column;
+}
+
+.formulario label{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.formulario input,
+.formulario textarea{
+    padding:4px;
+    border:1px solid #999;
+}
+
+.formulario button{
+    margin-top:15px;
+    padding:10px;
+    background:#666;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.formulario button:hover{
+    background:#444;
+}
+
+.mapa{
+    margin-top:30px;
+}
+
+.mapa iframe{
+    width:100%;
+    height:350px;
+    border:0;
+}
+
+/*Degradado Lineal foto de Contacto*/
+.foto-contacto{
+    width:180px;
+    margin:auto;
+    position:relative;
+}
+
+.foto-contacto img{
+    width:120%;
+    display:block;
+}
+
+.foto-contacto::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        to right,
+        rgba(0,0,0,.4),
+        rgba(0,0,0,0)
+    );
+}
+
+
+/*Maquetacion de Grid*/
+.nosotros{
+    padding-top:250px;
+}
+
+.titulo{
+    background:#0f234f;
+    color:white;
+    text-align:center;
+    padding:15px;
+    grid-area: titulo;
+}
+
+.contenido{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    grid-template-areas:
+    "titulo titulo titulo"
+    "texto texto lateral"
+    "texto texto lateral"
+    "foto1 foto2 lateral "
+    "copyrigth copyrigth copyrigth";
+
+    gap:30px;
+
+    margin-top:20px;
+}
+
+.texto{
+    grid-area:texto;
+}
+
+.lateral{
+    grid-area:lateral;
+}
+
+.foto1{
+    grid-area:foto1;
+}
+
+.foto2{
+    grid-area:foto2;
+}
+
+.copyrigth{
+    background:#0f234f;
+    color:white;
+    text-align:center;
+    padding:15px;
+    grid-area: copyrigth;
+}
+
+/*Imagenes de Nosotros*/
+.texto{
+    text-align:justify;
+    line-height:1.6;
+}
+
+.lateral img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.foto1 img,
+.foto2 img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border:2px solid #d4a45c;
+}
+
+/*recuadro de promociones antes de presionar el boton*/
+.promociones{
+    padding-top:250px;
+}
+.promo-container{
+    width:60%;
+    margin:auto;
+    background:white;
+    padding:50px;
+    text-align:center;
+    box-shadow:0px 0px 20px rgba(0,0,0,.15);
+    border-radius:10px;
+}
+.descripcion{
+    margin:25px 0;
+}
+
+/*promocion 3x1*/
+.promo-card h3{
+    color:#46186b;      /* Rojo */
+    font-size:32px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/*color al recuadro de promociones antes de presionar el boton*/
+.promo-card{
+    width:60%;
+    margin:auto;
+    padding:30px;
+    background:#dfb8eb;
+    border:2px dashed #e97dda;
+    border-radius:10px;
+    animation:latido 2s infinite;
+}
+
+/*animaciones con (Keyframes) de promociones*/
+@keyframes latido{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.05);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+/*boton de reclamar cupón de promociones*/
+.promo-card button{
+    margin-top:20px;
+    background:#7a546e;
+    color:white;
+    padding:12px 30px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+/*Media Queries PARA diferentes dispositivos*/
+/* PC grandes */
+@media (max-width:1200px){ }
+/* Laptop */
+@media (max-width:992px){ }
+/* Tablet */
+@media (max-width:768px){ }
+/* Celular */
+@media (max-width:576px){ }
+
+
+
+    /* PAGINA COMBOS*/
+.pagina-combos{
+    padding-top:240px;
+    padding-bottom:80px;
+    background:#ffffff;
+}
+   
+     /*Encabezado*/
+.encabezado-combos{
+    margin-bottom:50px;
+}
+.encabezado-combos h2{
+    font-size:40px;
+    font-weight:bold;
+    color:#2f2f2f;
+}
+.encabezado-combos p{
+    font-size:17px;
+    color:#777;
+    margin-top:10px;
+}
+
+/*Títulos*/
+.titulo-seccion{
+    font-size:28px;
+    font-weight:bold;
+    color:#555;
+    margin-bottom:25px;
+}
+/*Tarjetas*/
+.tarjeta-combo{
+    background:#fff;
+    border:1px solid #d8d8d8;
+    overflow:hidden;
+    transition:.35s;
+    height:100%;
+}
+
+.imagen-combo{
+    overflow:hidden;
+}
+
+.imagen-combo img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.descripcion-combo{
+    padding:22px;
+}
+
+.descripcion-combo h4{
+    font-size:24px;
+    color:#444;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.descripcion-combo p{
+    font-size:16px;
+    line-height:1.7;
+    text-align:justify;
+}
+
+/* Promoción*/
+.promo-compartir{
+    background:white;
+    border:1px solid #d8d8d8;
+    border-radius:px;
+    padding:35px;
+    margin-top:20px;
+}
+
+.imagen-promocion{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.imagen-promocion img{
+    width:100%;
+    max-width:480px;
+    height:420px;
+    object-fit:cover;
+}
+
+.contenido-promocion{
+    text-align:center;
+}
+
+.contenido-promocion h2{
+    color:#d62828;
+    font-size:34px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.contenido-promocion p{
+    width:85%;
+    margin:auto;
+    font-size:17px;
+    line-height:1.8;
+    color:#555;
+}
+
+.detalle-promocion{
+    display:block;
+    margin-top:18px;
+    font-size:14px;
+    color:#888;
+}
+
+.precio-promocion{
+    display:inline-block;
+    margin-top:20px;
+    background:#6c757d;
+    color:white;
+    padding:12px 25px;
+    border-radius:6px;
+    font-size:18px;
+    font-weight:bold;
+}
