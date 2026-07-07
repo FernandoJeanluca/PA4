@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Shop - Promociones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="shortcut icon" href="img/logomando.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="principal">
+            <header>
+                <nav class="menu">
+                    <h1>Game Shop</h1>
+                    <ul class="web">
+                    <li><a href="index.html"><i class="fa-regular fa-heart"></i>INICIO</a></li>
+                    <li><a href="nosotros.html"><i class="fa-solid fa-users"></i>NOSOTROS</a></li>
+                    <li><a href="blog.html"><i class="fa-solid fa-pencil"></i>BLOG</a></li>
+                    <li><a href="galeria.html"><i class="fa-solid fa-image"></i>GALERIA</a></li>
+                    <li><a href="videos.html"><i class="fa-solid fa-video"></i>VIDEOS</a></li>
+                    <li><a href="promociones.html"><i class="fa-solid fa-gift"></i>PROMOCIONES</a></li>
+                    <li><a href="combos.html"><i class="fa-solid fa-burger"></i>COMBOS</a></li>
+                    <li><a href="contacto.html"><i class="fa-regular fa-address-card"></i>CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="promociones">
+                <div class="promo-container">
+
+                   <h2><i class="fa-solid fa-tag"></i> Promociones Exclusivas</h2>
+
+                    <p class="descripcion">
+                          Más diversión, más compras. Válido mostrando esta pantalla en caja.
+                    </p>
+
+                   <div class="promo-card">
+
+                        <h3>¡3x1 en Juegos!</h3>
+
+                         <p>
+                          "Multiplica tus vidas: Llévate 3 juegos, paga solo 1 y desbloquea el modo cooperativo en casa."
+                         </p>
+
+                       <button id="cupon">
+                        Reclamar Cupón
+                       </button>
+
+                   </div>
+
+                </div>
+            </section>
+
+
+         
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script>
+          document.getElementById("cupon").addEventListener("click", function(){
+
+          Swal.fire({
+
+          icon:"success",
+
+          title:"¡Cupón Activado!",
+
+          text:"Presenta este cupón en caja para obtener tu promoción 3x1.",
+
+          confirmButtonText:"Confirmar",
+
+          confirmButtonColor:"#7a546e"
+            });
+          });
+     </script>
+
+
+
+    <footer>
+                <br>
+                <br>
+                <nav class="menu">
+                    <ul class="redes">
+                        <li><a href="https://x.com/?lang=es"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/?hl=es"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/explore"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </nav>
+    </footer>
